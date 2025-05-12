@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Feather</title>
-  <link rel="icon" type="image/x-icon" href="sklad.sigi/tab_icon.svg">
- 
+  <link rel="icon" type="image/x-icon" href="tab_icon.svg">
   
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -19,9 +18,9 @@
             justify-content: center;
         }
        .intro-bar {
-     margin-bottom: 5px;
+    margin: 0px;
     width: 100%;
-    background-color:#4d4c4c;
+    background-color: #27dbc0;
     color: white;
     padding: 0 20px; /* Adjusted */
     text-align: left;
@@ -77,26 +76,24 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
-     opacity: 50;
 }
 
 .button-container button {   
     margin-left: 5px;
     margin-right: 5px;
-    padding: 5px 10px; /* Adjust padding as needed */
-    min-width: 120px; /* Set a fixed width for the buttons */ 
-    background-color: #4d4c4c;
-    /*opacity: 0.7; */
-
-    color: white;
+    padding: 10px 10px; /* Adjust padding as needed */
+    min-width: 130px; /* Set a fixed width for the buttons */
+    background-color: #e3e3e3;
+    color: #696969;
     border: none;
     border-radius: 5px;
     cursor: pointer; 
-    font-size: 16px;    
-    font-family: Helvetica, sans-serif;    
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
 }
 
 
@@ -119,8 +116,8 @@
 
        <!-- Button Container -->
     <div class="button-container">
-        <button onclick="window.location.href='https://samayel.com/sklad.sigi/img.firmware.update/index-firmware-update.html'">firmware</button>
-        <button onclick="window.location.href='https://samayel.com/sklad.sigi/img.device.manual/index-device-manual.html'">manual for use</button>
+        <button onclick="window.location.href='https://www.google.sk/?hl=sk'">firmware</button>
+        <button onclick="window.location.href='https://www.google.sk/?hl=sk'">manual for use</button>
    
 
 
@@ -160,56 +157,56 @@
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer5">
-    <h3 id="widgetLabel5">Vaha5</h3>
+    <h3 id="widgetLabel5">HKL katana</h3>
     <canvas class="donut-chart" id="donutChart5"></canvas>
     <div class="chart-text" id="chartText5">Loading...</div>
     <div class="last-update" id="lastUpdate5"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer6">
-    <h3 id="widgetLabel6">Samo testuje</h3>
+    <h3 id="widgetLabel6">H300</h3>
     <canvas class="donut-chart" id="donutChart6"></canvas>
     <div class="chart-text" id="chartText6">Loading...</div>
     <div class="last-update" id="lastUpdate6"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer7">
-    <h3 id="widgetLabel7">Vaha 7</h3>
+    <h3 id="widgetLabel7">katana Waki</h3>
     <canvas class="donut-chart" id="donutChart7"></canvas>
     <div class="chart-text" id="chartText7">Loading...</div>
     <div class="last-update" id="lastUpdate7"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer8">
-    <h3 id="widgetLabel8">Vaha 8</h3>
+    <h3 id="widgetLabel8">HK Katana</h3>
     <canvas class="donut-chart" id="donutChart8"></canvas>
     <div class="chart-text" id="chartText8">Loading...</div>
     <div class="last-update" id="lastUpdate8"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer9">
-    <h3 id="widgetLabel9">Vaha 9</h3>
+    <h3 id="widgetLabel9">HOB</h3>
     <canvas class="donut-chart" id="donutChart9"></canvas>
     <div class="chart-text" id="chartText9">Loading...</div>
     <div class="last-update" id="lastUpdate9"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer10">
-    <h3 id="widgetLabel10">Vaha 10</h3>
+    <h3 id="widgetLabel10">Kreg kratky</h3>
     <canvas class="donut-chart" id="donutChart10"></canvas>
     <div class="chart-text" id="chartText10">Loading...</div>
     <div class="last-update" id="lastUpdate10"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer11">
-    <h3 id="widgetLabel11">Vaha 11</h3>
+    <h3 id="widgetLabel11">Kreg Dlhy</h3>
     <canvas class="donut-chart" id="donutChart11"></canvas>
     <div class="chart-text" id="chartText11">Loading...</div>
     <div class="last-update" id="lastUpdate11"></div>
 </div>
 
 <div class="donut-chart-container" id="donutChartContainer12">
-    <h3 id="widgetLabel12">Vaha 12</h3>
+    <h3 id="widgetLabel12">HW300</h3>
     <canvas class="donut-chart" id="donutChart12"></canvas>
     <div class="chart-text" id="chartText12">Loading...</div>
     <div class="last-update" id="lastUpdate12"></div>
@@ -226,7 +223,7 @@
                 labels: [segmentLabel, 'Voľné miesto'],
                 datasets: [{
                     data: [value, remainingValue],
-                    backgroundColor: ['#ff4b14', '#ababab'],
+                    backgroundColor: ['#42f5da', '#e0dede'],
                     borderWidth: 1
                 }]
             },
