@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Špekáčka Grid Layout</title>
   <style>
     body {
@@ -8,16 +10,46 @@
       background: #000;
       color: #fff;
       font-family: Helvetica, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
       padding: 20px;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .topnav {
+      text-align: right;
+    }
+
+    .topnav a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 1% 5%;
+      text-decoration: none;
+      font-size: 40px;
+      margin: 0px;
+    }
+
+    .topnav a.active {
+     
+      background-color: transparent;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .topnav a:hover {
+      background: var(--color-gray-90, #333);
+      color: var(--color-gray-50, #ccc);
+      border: 2px solid white;
+      transition: all 0.5s ease-in-out;
     }
 
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      max-width: 1200px;
       width: 100%;
     }
 
@@ -44,45 +76,75 @@
       object-fit: contain;
     }
 
+    .nadpis {
+      margin-bottom: 20px;
+    }
+
+    .podnapdpis {
+      display: block;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+
     @media (max-width: 768px) {
       .grid-container {
         grid-template-columns: 1fr;
       }
+
+      .topnav {
+        text-align: center;
+      }
+
+      .topnav a {
+        font-size: 30px;
+      }
     }
   </style>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 
-  <div class="grid-container">
+  <div class="wrapper">
 
-    <!-- 1. 3D Scéna -->
-    <div class="grid-item">
-      <canvas id="glcanvas" tabindex="1"></canvas>
+    <!-- SMAYEL tlačidlo zarovno gridu -->
+    <div class="topnav">
+      <a href="https://samuelfajnor.github.io/portfolio/" class="active">SMAYEL</a>
     </div>
 
-    <!-- 2. Text -->
-    <div class="grid-item" style="display: block; text-align: center;">
-    <h2>ŠPEKAČKA</h2>
-      <p style="text-align:center">Na prvý pohľad pôsobí takmer groteskne – obrovský betónový špekáčik, objekt až absurdne známy. No za týmto zdanlivo banálnym výjavom sa skrýva trpká metafora stavu národa, ktorý je dlhodobo pasivizovaný, otupený a grilovaný v ohni cudzích a domácich mocenských záujmov.
+    <!-- Nadpis -->
+    <div class="nadpis">
+     </a>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid-container">
+      <!-- 3D Scéna -->
+      <div class="grid-item">
+        <canvas id="glcanvas" tabindex="1"></canvas>
+      </div>
+
+      <!-- Text -->
+      <div class="grid-item" style="display: block; text-align: center;">
+        <h2>ŠPEKAČKA</h2>
+         <p style="text-align:center">Na prvý pohľad pôsobí takmer groteskne – obrovský betónový špekáčik, objekt až absurdne známy. No za týmto zdanlivo banálnym výjavom sa skrýva trpká metafora stavu národa, ktorý je dlhodobo pasivizovaný, otupený a grilovaný v ohni cudzích a domácich mocenských záujmov.
 Špekáčik – symbol ľudovej zábavy – sa tu mení na stelesnenie národnej bezradnosti. Jeho nehybná poloha pripomína krajinu, ktorá sa ocitla v stave chronickej paralýzy.
 Jedným z hlavných motorov tejto nehybnosti je hlboká polarizácia spoločnosti — rozpory také vyhrotené, že znemožňujú nielen spoluprácu, ale aj základnú vôľu hľadať spoločné riešenia. Spoločnosť sa stáva ochromenou sama sebou.
 Forma prefabrikátu nie je náhodná – ide o objekt navrhnutý na to, aby slúžil, nie aby samostatne existoval. V tomto kontexte je Slovensko vnímané ako produkt dlhodobého historického a geopolitického modelu: krajina, ktorej bolo častejšie pridelené miesto pozorovateľa než tvorcu, reagujúca na tlaky zvonka skôr než ich sama určujúca.
 Použitý betón tu nie je len symbolom industrializácie. Vyjadruje aj emocionálnu nehybnosť, dedičstvo odosobnenej tvrdosti a systému, ktorý v ľuďoch zanechal nielen vyčerpanie, ale aj rezignáciu. Strohá forma objektu zvýrazňuje stratu individuálneho hlasu v priestore, ktorý sa tvári, že je spoločný — no v skutočnosti sa v ňom stále menej ľudí cíti ako jeho plnohodnotná súčasť.
 Dielo otvorene spochybňuje našu ochotu čeliť realite: Sme ochotní priznať si túto kolektívnu nehybnosť, ktorú si živíme vlastnými konfliktmi? Alebo nám stále viac vyhovuje rola opekaného objektu v réžii, ktorú sami neovplyvňujeme? Máme ešte chuť a silu tento cyklus prerušiť?
 </p>
-    </div>
+      </div>
 
-    <!-- 3. Obrázok R -->
-    <div class="grid-item">
-      <img src="assets/R-spekacka.png" alt="R špekáčka obrázok" />
-    </div>
+      <!-- Obrázok R -->
+      <div class="grid-item">
+        <img src="assets/R-spekacka.png" alt="R špekáčka obrázok" />
+      </div>
 
-    <!-- 4. Obrázok L -->
-    <div class="grid-item">
-      <img src="assets/L-spekacka.png" alt="L špekáčka obrázok" />
+      <!-- Obrázok L -->
+      <div class="grid-item">
+        <img src="assets/L-spekacka.png" alt="L špekáčka obrázok" />
+      </div>
     </div>
 
   </div>
