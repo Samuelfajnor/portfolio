@@ -10,6 +10,14 @@ body, body * {
   }
 }
 
+  body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    
 /* style cursor */
 .cursor { 
   position: fixed; 
@@ -275,21 +283,21 @@ span{
 }
 
 
-  .scene-container {
-    width: 90%;
-    height: 80vh; /* výška na desktopoch */
-    margin: 50px auto;
-    border: 3px solid #888;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    position: relative;
-  }
+    .scene-container {
+      width: 90%;
+      height: 80vh;
+      margin: 50px auto;
+      border: 3px solid #888;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      position: relative;
+    }
 
-  canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-    outline: none;
-  }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      outline: none;
+    }
 
   @media (max-width: 400px) {
     .scene-container {
