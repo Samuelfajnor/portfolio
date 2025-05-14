@@ -14,8 +14,8 @@ body, body * {
 .cursor {
   position: fixed;
   background: #0D01DB;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: -10px 0 0 -10px;
   border-radius: 50%;
   border:2px solid white;
@@ -26,6 +26,7 @@ body, body * {
           user-select: none;
   pointer-events: none;
   z-index: 10000;
+  opacity: 0.5;
 }
 
 /* Style the links inside the navigation bar */
