@@ -288,9 +288,9 @@ span{
 @media screen and (max-width: 600px) {
   .scene-section {
     grid-template-columns: 1fr;
+     min-height: 500px; /* nastaviteľné – môžeš dať aj 50vh, 400px, atď. */
   }
 }
-
 
 .scene-section {
   display: grid;
