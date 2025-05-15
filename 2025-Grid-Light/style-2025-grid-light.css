@@ -117,8 +117,8 @@ padding-left: 15px;
 }
 
 body{
-  background: var(--color-gray-90);
-  color: var(--color-gray-50);
+background-color: #111;
+  color: #fff;
   font-family: 'Roboto Mono', monospace;
   font-size: var(--font-size-initial);
 }
