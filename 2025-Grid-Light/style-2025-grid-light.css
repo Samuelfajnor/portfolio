@@ -298,11 +298,7 @@ span{
       outline: none;
     }
 
- @media (max-width: 800px) {
-    .scene-container {
-      height: 50vh; /* menšia výška pre mobilné obrazovky */
-    }
-  }
+
 
 @media (max-width: 600px) {
   .main2 {
