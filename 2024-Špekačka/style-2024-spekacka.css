@@ -13,7 +13,7 @@ body, body * {
 /* style cursor */
 .cursor {
   position: fixed;
-  background: #0D01DB;
+  background: ;
   width: 80px;
   height: 80px;
   margin: -10px 0 0 -10px;
@@ -46,7 +46,7 @@ body, body * {
   margin-right: 1%;
   margin-top: 1%;
   float: right;
-  background-color: #0D01DB;
+  background-color: ;
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
@@ -69,7 +69,7 @@ padding-left: 15px;
 .podnapdpis{
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
-  color:  #0D01DB;
+  color:  ;
 }
 
 .fotky{
@@ -135,7 +135,7 @@ main2{
 }
 
 section2{
-  background:#0D01DB;
+  background:;
   color: white;
 }
 
@@ -199,7 +199,7 @@ span{
 /*            FOOTER        */
 .site-footer
 {
-  background-color:#0D01DB;
+  background-color:;
   padding:45px  20px;
   font-size:15px;
   line-height:24px;
@@ -226,7 +226,7 @@ span{
 
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#a29674;
   text-decoration:none;
 }
 .footer-links
@@ -247,7 +247,7 @@ span{
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#737373;
+  color:#a29674;
   text-decoration:none;
 }
 .footer-links.inline li
