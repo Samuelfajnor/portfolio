@@ -300,15 +300,11 @@ span{
 
 
 
-@media (max-width: 600px) {
-  .main2 {
-    grid-template-columns: 1fr; /* 1 stĺpec */
-    padding: 20px;
-    gap: 20px;
+ @media (max-width: 800px) {
+    .scene-container {
+      height: 50vh; /* menšia výška pre mobilné obrazovky */
+    }
   }
-}
-
-
 
 
 
