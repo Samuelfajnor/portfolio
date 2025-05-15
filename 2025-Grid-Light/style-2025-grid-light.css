@@ -306,7 +306,13 @@ span{
     }
   }
 
-
+@media (max-width: 800px) {
+  .main2 {
+    grid-template-columns: 1fr; /* 1 stĺpec */
+    padding: 20px;
+    gap: 20px;
+  }
+}
 
 
 
